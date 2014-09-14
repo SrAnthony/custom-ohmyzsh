@@ -3,21 +3,14 @@ s() { cd ~/Sites/$1; }
 _s() { _files -W ~/Sites -/; }
 compdef _s s
 
-# st() {subl .;}
-
-# Alias Pessoais
-# Postgresql
-# alias pgstart="pg_ctl -D /usr/local/var/postgres -l logfile start"
-# alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
-# alias mongostart="mongod run --config /usr/local/Cellar/mongodb/2.0.3-x86_64/mongod.conf"
-
-
 #git stuff
 #  manda as alteraçoes pro repo
 alias pusho="gm && git push origin master"
 # pega as alteraçoes do repo de dev
 alias pullo="gm && git pull origin master"
 alias gs='git status'
+
+alias gl='git l'
 
 alias gi="git commit -m \$1"
 
@@ -36,9 +29,11 @@ alias grbm="git checkout master && git rebase work"
 # vai pro work e ve se tem algo no index
 alias gw='git checkout work && git status'
 # adiciona tudo no index
-alias ga='git add'
+alias gall='git add --all'
+
 # adiciona interativamente
-# alias ga="git add -i"
+alias ga="git add"
+alias gu='git add -u'
 
 alias cw="compass watch"
 

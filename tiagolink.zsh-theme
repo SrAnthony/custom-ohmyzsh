@@ -4,6 +4,8 @@
 # ------------------------------------------------------------------------
 
 # Color shortcuts
+CYAN=$fg[cyan]
+MAGENTA=$fg[magenta]
 RED=$fg[red]
 YELLOW=$fg[yellow]
 GREEN=$fg[green]
@@ -28,9 +30,9 @@ ZSH_THEME_GIT_PROMPT_CLEAN=""
 ZSH_THEME_GIT_PROMPT_UNMERGED=" %{$RED%}unmerged"
 ZSH_THEME_GIT_PROMPT_DELETED=" %{$RED%}deleted"
 ZSH_THEME_GIT_PROMPT_RENAMED=" %{$YELLOW%}renamed"
-ZSH_THEME_GIT_PROMPT_MODIFIED=" %{$YELLOW%}modified"
+ZSH_THEME_GIT_PROMPT_MODIFIED=" %{$BLUE%}modified"
 ZSH_THEME_GIT_PROMPT_ADDED=" %{$GREEN%}added"
-ZSH_THEME_GIT_PROMPT_UNTRACKED=" %{$WHITE%}untracked"
+ZSH_THEME_GIT_PROMPT_UNTRACKED=" %{$CYAN%}untracked"
 
 # Format for git_prompt_ahead()
 ZSH_THEME_GIT_PROMPT_AHEAD=" %{$RED%}(!)"
