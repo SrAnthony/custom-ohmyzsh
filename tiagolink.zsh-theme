@@ -30,7 +30,7 @@ ZSH_THEME_GIT_PROMPT_CLEAN=""
 ZSH_THEME_GIT_PROMPT_UNMERGED=" %{$RED%}unmerged"
 ZSH_THEME_GIT_PROMPT_DELETED=" %{$RED%}deleted"
 ZSH_THEME_GIT_PROMPT_RENAMED=" %{$YELLOW%}renamed"
-ZSH_THEME_GIT_PROMPT_MODIFIED=" %{$BLUE%}modified"
+ZSH_THEME_GIT_PROMPT_MODIFIED=" %{$YELLOW%}modified"
 ZSH_THEME_GIT_PROMPT_ADDED=" %{$GREEN%}added"
 ZSH_THEME_GIT_PROMPT_UNTRACKED=" %{$CYAN%}untracked"
 
@@ -43,6 +43,6 @@ ZSH_THEME_GIT_PROMPT_SHA_AFTER="%{$WHITE%}]"
 
 # Prompt format
 PROMPT='
-%{$GREEN_BOLD%}tiagolink %{$RED_BOLD%}$(rvm-prompt)%{$WHITE%}: %{$YELLOW%}%~%u$(parse_git_dirty)$(git_prompt_ahead)%{$RESET_COLOR%}
+%{$GREEN_BOLD%}tiagolink %{$RED_BOLD%}$(rvm-prompt)%{$WHITE%}: %{$WHITE%}%~%u$(parse_git_dirty)$(git_prompt_ahead)%{$RESET_COLOR%}
 %{$BLUE%}>%{$RESET_COLOR%} '
 RPROMPT='%{$GREEN_BOLD%}$(current_branch)$(git_prompt_short_sha)$(git_prompt_status)%{$RESET_COLOR%}'
