@@ -72,6 +72,6 @@ ZSH_THEME_GIT_PROMPT_SHA_AFTER="%{$WHITE%}]"
 
 # Prompt format
 PROMPT="
-%{$WHITE%}╭─ %{$GREEN%}Link %{$RESET_COLOR%}%{$YELLOW%}%~%u%{$RESET_COLOR%} \$(git_custom_status)\$(git_prompt_short_sha)%{$RESET_COLOR%}\$(git_prompt_status) \$(parse_git_dirty)%{$WHITE%}
+%{$WHITE%}╭─ %{$BLUE%}Anthony %{$RESET_COLOR%}%{$YELLOW%}%~%u%{$RESET_COLOR%} \$(git_custom_status)\$(git_prompt_short_sha)%{$RESET_COLOR%}\$(git_prompt_status) \$(parse_git_dirty)%{$WHITE%}
 ╰─ → %{$RESET_COLOR%}"
 RPROMPT="%{$RED_BOLD%}\$(rvm-prompt)%{$RESET_COLOR%}"
